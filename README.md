@@ -96,3 +96,6 @@ embeddings = output.pooler_output.float().cpu()
 ## Acknowledgements
 This repository contains a mix of code from [DinoV2](https://github.com/facebookresearch/dinov2)/[DinoV3](https://github.com/facebookresearch/dinov3), [CryoSBI](https://github.com/flatironinstitute/cryoSBI), [CryoJax](https://github.com/michael-0brien/cryojax), and [CryoSpax](https://github.com/michael-0brien/cryospax). 
 All third-party code remains subject to the licenses of its respective original repositories.
+
+## Troubleshooting
+For any issues or questions, please open a github issue!
