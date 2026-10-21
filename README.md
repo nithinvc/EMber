@@ -1,33 +1,11 @@
 <h1 align="center"><em>EMber</em>: Learning the Shared Latent Structure of Cryo-EM Inverse Problems</h1>
 
-<!-- Replace each href="#" with the author's website URL. -->
-<p align="center">
-  <a href="https://nithinvc.github.io/">Nithin Chalapathi</a> ·
-  <a href="https://www.theosternlieb.com/">Theo Sternlieb</a> ·
-  <a href="#">Ethan Han</a> ·
-  <a href="https://sonyahanson.github.io/">Sonya M. Hanson</a> ·
-  <a href="https://pilarcossio.org/">Pilar Cossio</a> ·
-  <a href="https://a1k12.github.io/">Aditi S. Krishnapriyan</a> ·
-  <a href="https://ritwikgupta.me/">Ritwik Gupta</a>
-</p>
-
 EMber is a family of pretrained vision transformers for extracting representations from single-particle cryo-EM particle images. Given a particle image, EMber produces an image-level embedding and spatial patch features for use in downstream analysis. The models were trained using self-distillation on over 50 million experimental particle images from 214 EMPIAR datasets, together with simulated projections from 268,000 molecular assemblies. This repository contains the model definition and instructions for inference. Evaluation, training, and data processing code coming soon! 
 
-Check out our preprint [here](https://arxiv.org/abs/2610.22523)!
+Check out our preprint here: XX.
 
-This is joint work between the [ASK Lab at BAIR](https://a1k12.github.io/), the [Flatiron Institute CCM](https://www.simonsfoundation.org/flatiron/computational-mathematics/), and the [RAGS Lab at UMD](https://ragslab.ai/). If you find this work useful, please consider citing:
+This is joint work between the XXX, XXX, and XXX.
 
-```bibtex
-@misc{chalapathi2026learningsharedlatentstructure,
-      title={Learning the Shared Latent Structure of Cryo-EM Inverse Problems}, 
-      author={Nithin Chalapathi and Theo Sternlieb and Ethan Han and Sonya M. Hanson and Pilar Cossio and Aditi S. Krishnapriyan and Ritwik Gupta},
-      year={2026},
-      eprint={2610.22523},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2610.22523}, 
-}
-```
 
 ## Updates
 
@@ -38,12 +16,12 @@ This is joint work between the [ASK Lab at BAIR](https://a1k12.github.io/), the 
 ### Running Inference
 The trained model weights are stored on HuggingFace.
 
-| Model | Parameters | Hugging Face Link |
+| Model | Parameters | Hugging Face Link (namespace redacted) |
 | --- | --- | --- |
-| EMber-S | 21.4M | [EMber-small](https://huggingface.co/nithinvc/EMber-small) |
-| EMber-B | 85.3M | [EMber-base](https://huggingface.co/nithinvc/EMber-base) |
-| EMber-L | 304.2M | [EMber-large](https://huggingface.co/nithinvc/EMber-large) |
-| EMber-g/2 | 1.1B | [EMber-giant](https://huggingface.co/nithinvc/EMber-giant) |
+| EMber-S | 21.4M | [EMber-small](https://huggingface.co/XXX/EMber-small) |
+| EMber-B | 85.3M | [EMber-base](https://huggingface.co/XXX/EMber-base) |
+| EMber-L | 304.2M | [EMber-large](https://huggingface.co/XXX/EMber-large) |
+| EMber-g/2 | 1.1B | [EMber-giant](https://huggingface.co/XXX/EMber-giant) |
 
 
 First, setup the repository using [uv](https://docs.astral.sh/uv/):
@@ -63,7 +41,7 @@ from EMber import EMberModel, normalize_images
 
 device =  torch.device("cuda") if torch.cuda.is_available() else torch.device('cpu')
 
-model = EMberModel.from_pretrained("nithinvc/EMber-base")
+model = EMberModel.from_pretrained("XXX/EMber-base")
 # Optional, but highly recommended for performance
 model.compile() 
 
