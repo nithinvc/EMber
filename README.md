@@ -15,7 +15,7 @@ EMber is a family of pretrained vision transformers for extracting representatio
 
 Check out our preprint [here](https://arxiv.org/abs/2610.22523)!
 
-This is joint work between [ASK Lab at BAIR](https://a1k12.github.io/), the [Flatiron Institute CCM](https://www.simonsfoundation.org/flatiron/computational-mathematics/), and the [RAGS Lab at UMD](https://ragslab.ai/). If you find this work useful, please consider citing:
+This is joint work between the [ASK Lab at BAIR](https://a1k12.github.io/), the [Flatiron Institute CCM](https://www.simonsfoundation.org/flatiron/computational-mathematics/), and the [RAGS Lab at UMD](https://ragslab.ai/). If you find this work useful, please consider citing:
 
 ```bibtex
 @misc{chalapathi2026learningsharedlatentstructure,
