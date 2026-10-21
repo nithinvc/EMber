@@ -11,11 +11,11 @@
   <a href="https://ritwikgupta.me/">Ritwik Gupta</a>
 </p>
 
-EMber is a family of vision transformers, pre-trained on >50 million experimental particle images from 214 EMPIAR datasets together with simulated projections from 268,000 molecular assemblies, using self-distillation. Check out our preprint [here](https://arxiv.org/abs/2610.22523)!
+EMber is a family of pretrained vision transformers for extracting representations from single-particle cryo-EM particle images. Given a particle image, EMber produces an image-level embedding and spatial patch features for use in downstream analysis. The models were trained using self-distillation on over 50 million experimental particle images from 214 EMPIAR datasets, together with simulated projections from 268,000 molecular assemblies. This repository contains the model definition and instructions for inference. Evaluation, training, and data processing code coming soon! 
 
-This is joint work between [ASK Lab at BAIR](https://a1k12.github.io/), the [Flatiron Institute CCM](https://www.simonsfoundation.org/flatiron/computational-mathematics/), and the [RAGS Lab at UMD](https://ragslab.ai/).
+Check out our preprint [here](https://arxiv.org/abs/2610.22523)!
 
-If you find this work useful, please consider citing:
+This is joint work between [ASK Lab at BAIR](https://a1k12.github.io/), the [Flatiron Institute CCM](https://www.simonsfoundation.org/flatiron/computational-mathematics/), and the [RAGS Lab at UMD](https://ragslab.ai/). If you find this work useful, please consider citing:
 
 ```bibtex
 @misc{chalapathi2026learningsharedlatentstructure,
@@ -31,7 +31,7 @@ If you find this work useful, please consider citing:
 
 ## Updates
 
-- [Oct 21, 2026] Initial Model Release! Evaluation and training code coming soon!
+- [Oct 21, 2026] Initial Model Release!
 
 ## Quick Start Guide
 
@@ -96,5 +96,3 @@ embeddings = output.pooler_output.float().cpu()
 ## Acknowledgements
 This repository contains a mix of code from [DinoV2](https://github.com/facebookresearch/dinov2)/[DinoV3](https://github.com/facebookresearch/dinov3), [CryoSBI](https://github.com/flatironinstitute/cryoSBI), [CryoJax](https://github.com/michael-0brien/cryojax), and [CryoSpax](https://github.com/michael-0brien/cryospax). 
 All third-party code remains subject to the licenses of its respective original repositories.
-
-Run Python with `uv run python`. A GPU is optional; the loader starts on CPU.
