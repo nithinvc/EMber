@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EMber"
+version = "0.1.0"
+description = "EMber cryo-EM model backbones and checkpoint loading"
+readme = "README.md"
+requires-python = ">=3.11.1,<3.14"
+license-files = ["LICENSE.txt", "LICENSES/*.txt", "THIRD_PARTY_NOTICES.txt"]
+dependencies = [
+    "huggingface-hub>=0.27,<2",
+    "numpy>=2.0",
+    "safetensors>=0.4.3",
+    "torch==2.9.1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4.2", "ruff>=0.11"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["EMber*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint]
+select = ["I", "F401"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["EMber"]
+
+[tool.uv]
+default-groups = []

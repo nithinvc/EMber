@@ -1,0 +1,48 @@
+EMber third-party source notices
+===============================
+
+DINOv3
+------
+Copyright (c) Meta Platforms, Inc. and affiliates.
+
+Source: https://github.com/facebookresearch/dinov3
+Revision: 31703e4cbf1ccb7c4a72daa1350405f86754b6d1
+License: LICENSES/DINOv3.txt (verbatim upstream LICENSE.md)
+
+The following files contain code adapted from that revision:
+
+  EMber/models/vision_transformer.py
+    upstream: dinov3/models/vision_transformer.py
+  EMber/models/layers/attention.py
+  EMber/models/layers/block.py
+  EMber/models/layers/ffn_layers.py
+  EMber/models/layers/layer_scale.py
+  EMber/models/layers/patch_embed.py
+  EMber/models/layers/rms_norm.py
+  EMber/models/layers/rope_position_encoding.py
+    upstream: corresponding files in dinov3/layers/
+  EMber/common/utils/tensor_utils.py
+    upstream: cat_keep_shapes, uncat_with_shapes, and named_apply in
+    dinov3/utils/utils.py
+
+These are modified copies, adapted for the EMber package, grayscale images,
+and its backbone configuration. 
+
+DINO and timm
+-------------
+DINO:
+  Copyright (c) Facebook, Inc. and its affiliates.
+  Source: https://github.com/facebookresearch/dino
+  Revision: 7c446df5b9f45747937fb0d72314eb9f7b66930a
+  Referenced source: vision_transformer.py
+  License: LICENSES/DINO-Apache-2.0.txt (verbatim upstream LICENSE)
+
+timm / PyTorch Image Models:
+  Copyright 2020, Ross Wightman
+  Source: https://github.com/huggingface/pytorch-image-models
+  Former source location: https://github.com/rwightman/pytorch-image-models
+  Revision: 6e3fdda39508db30766f9d9e6ec32380ebee8b8c
+  Referenced source: timm/models/vision_transformer.py
+  License: LICENSES/timm-Apache-2.0.txt (verbatim upstream LICENSE)
+
+Installed dependencies retain their own licenses. 
