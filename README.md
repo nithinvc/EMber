@@ -1,6 +1,5 @@
 <h1 align="center"><em>EMber</em>: Learning the Shared Latent Structure of Cryo-EM Inverse Problems</h1>
 
-<!-- Replace each href="#" with the author's website URL. -->
 <p align="center">
   <a href="https://nithinvc.github.io/">Nithin Chalapathi</a> ·
   <a href="https://www.theosternlieb.com/">Theo Sternlieb</a> ·
