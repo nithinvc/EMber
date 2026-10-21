@@ -1,4 +1,15 @@
-# EMber: Learning the Shared Latent Structure of Cryo-EM Inverse Problems
+<h1 align="center"><em>EMber</em>: Learning the Shared Latent Structure of Cryo-EM Inverse Problems</h1>
+
+<!-- Replace each href="#" with the author's website URL. -->
+<p align="center">
+  <a href="https://nithinvc.github.io/">Nithin Chalapathi</a> ·
+  <a href="https://www.theosternlieb.com/">Theo Sternlieb</a> ·
+  <a href="#">Ethan Han</a> ·
+  <a href="https://sonyahanson.github.io/">Sonya M. Hanson</a> ·
+  <a href="https://pilarcossio.org/">Pilar Cossio</a> ·
+  <a href="https://a1k12.github.io/">Aditi S. Krishnapriyan</a> ·
+  <a href="https://ritwikgupta.me/">Ritwik Gupta</a>
+</p>
 
 EMber is a family of vision transformers, pre-trained on >50 million experimental particle images from 214 EMPIAR datasets together with simulated projections from 268,000 molecular assemblies, using self-distillation. Check out our preprint [here](https://arxiv.org/abs/2610.22523)!
 
